@@ -1,4 +1,5 @@
 import type { AWS } from '@serverless/typescript';
+
 import { createTodo, getTodo, getAllTodos, updateTodo, deleteTodo } from '@functions/todo';
 
 const serverlessConfiguration: AWS = {
@@ -75,7 +76,6 @@ const serverlessConfiguration: AWS = {
             ReadCapacityUnits: 1,
             WriteCapacityUnits: 1
           },
-
         }
       }
     }
